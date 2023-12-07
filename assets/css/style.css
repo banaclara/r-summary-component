@@ -26,10 +26,14 @@ body {
 }
 
 main {
-    height: 97vh;
+    height: 98vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    height: 2vh;
 }
 
 .container {
@@ -125,12 +129,11 @@ h2 {
 }
 
 .stats .score {
-    font-weight: 600;
+    font-weight: 700;
     color: rgba(0, 0, 0, 0.4);
 }
 
 .stats .score span {
-    font-weight: 700;
     margin-right: 0.15em;
     color: black;
 }
@@ -184,13 +187,18 @@ button:hover {
 }
 
 .attribution {
-    margin-top: 0.5em;
-    font-size: 0.6em;
+    font-size: 0.5em;
     text-align: center;
 }
 
 .attribution a {
     color: var(--cobaltblue);
+    transition: 0.3s;
+}
+
+.attribution a:hover {
+    background-color: var(--lightslateblue);
+    color: white;
 }
 
 @media screen and (max-width: 680px) {
