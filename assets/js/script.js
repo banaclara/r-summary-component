@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     p.classList.add("score");
     p.appendChild(span);
     span.appendChild(document.createTextNode(categories.score));
-    span.classList.add("scored");
     p.appendChild(document.createTextNode(" / 100"));
 
     container.appendChild(section);

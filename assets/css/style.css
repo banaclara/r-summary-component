@@ -124,9 +124,15 @@ h2 {
     margin-right: 0.7em;
 }
 
+.stats .score {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+}
+
 .stats .score span {
     font-weight: 700;
     margin-right: 0.15em;
+    color: black;
 }
 
 .Reaction {
@@ -185,4 +191,23 @@ button:hover {
 
 .attribution a {
     color: var(--cobaltblue);
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        height: fit-content;
+    }
+
+    .container {
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .result, .stats {
+        width: auto;
+    }
+
+    .result {
+        border-radius: 0 0 1.8em 1.8em;
+    }
 }
