@@ -43,11 +43,6 @@ footer {
     box-shadow: 0em 1em 2em 0.7em var(--paleblue);
 }
 
-h2 {
-    font-size: 1.35em;
-    margin-bottom: 0.6em;
-}
-
 .result {
     background-image: linear-gradient(var(--lightslateblue), var(--lightroyalblue));
     border-radius: 1.8em;
@@ -60,15 +55,21 @@ h2 {
     text-align: center;
 }
 
-.result h2, .result p {
+.result h1 {
+    font-size: 1.35em;
+    margin-bottom: 0.6em;
     color: var(--lightlavender);
 }
 
-.result h3, .result .fullscore {
+.result p {
+    color: var(--lightlavender);
+}
+
+.result h2, .result .fullscore {
     color: white;
 }
 
-.result h3 {
+.result h2 {
     font-size: 1.8em;
     margin-bottom: 0.4em;
 }
@@ -115,7 +116,8 @@ h2 {
     margin-bottom: 0;
 }
 
-.stats h2 {
+.stats h3 {
+    font-size: 1.35em;
     margin-bottom: 0.5em;
 }
 
