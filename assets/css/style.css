@@ -5,18 +5,10 @@
     --orangyellow: hsl(39, 100%, 56%);
     --teal: hsl(166, 100%, 37%);
     --cobaltblue: hsl(234, 85%, 45%);
-
-    --lightredbg: hsla(0, 100%, 67%, 0.05);
-    --orangyellowbg: hsla(39, 100%, 56%, 0.05);
-    --tealbg: hsla(166, 100%, 37%, 0.05);
-    --cobaltbluebg: hsla(234, 85%, 45%, 0.05);
-
     --lightslateblue: hsl(252, 100%, 67%);
     --lightroyalblue: hsl(241, 81%, 54%);
-
     --violetblue: hsla(256, 72%, 46%, 1);
     --persianblue: hsla(241, 72%, 46%, 0);
-
     --paleblue: hsl(221, 100%, 96%);
     --lightlavender: hsl(241, 100%, 89%);
     --darkgrayblue: hsl(224, 30%, 27%);
@@ -34,7 +26,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 97vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +36,7 @@ main {
     width: 735px;
     display: flex;
     border-radius: 1.8em;
-    box-shadow: 0em 1em 2em 0.5em var(--paleblue);
+    box-shadow: 0em 1em 2em 0.7em var(--paleblue);
 }
 
 h2 {
@@ -112,6 +104,11 @@ h2 {
     align-items: center;
     padding: 0.9em 0.9em;
     border-radius: 0.5em;
+    margin-bottom: 0.9em;
+}
+
+.stats section:last-of-type {
+    margin-bottom: 0;
 }
 
 .stats h2 {
@@ -129,37 +126,38 @@ h2 {
 
 .stats .score span {
     font-weight: 700;
+    margin-right: 0.15em;
 }
 
-#reaction {
-    background-color: var(--lightredbg);
+.Reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
 }
 
-#reaction h4 {
+.Reaction h4 {
     color: var(--lightred);
 }
 
-#memory {
-    background-color: var(--orangyellowbg);
+.Memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
 }
 
-#memory h4 {
+.Memory h4 {
     color: var(--orangyellow);
 }
 
-#verbal {
-    background-color: var(--tealbg);
+.Verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
 }
 
-#verbal h4 {
+.Verbal h4 {
     color: var(--teal);
 }
 
-#visual {
-    background-color: var(--cobaltbluebg);
+.Visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
 }
 
-#visual h4 {
+.Visual h4 {
     color: var(--cobaltblue);
 }
 
@@ -180,8 +178,8 @@ button:hover {
 }
 
 .attribution {
-    margin-top: 3em;
-    font-size: 0.8em;
+    margin-top: 0.5em;
+    font-size: 0.6em;
     text-align: center;
 }
 
